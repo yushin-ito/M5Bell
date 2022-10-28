@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M5Bell</title>
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="icon" type="image/png" href="image/favicon.png" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="header-icon" src="image/favicon.png" alt="" />
+          <h3>M5Bell</h3>
+        </div>
+      </div>
+    </header>
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>ANYWHERE ANYTIME.</h1>
+        <p>M5BellはESP32を使ったインターホンです。</p>
+        <p>どこでも簡単にインターホンを実装できます。</p>
+        <div class="btn-wrapper">
+          <a href="https://github.com/yushin-ito/M5Bell" class="btn code"
+            >コードはこちら</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="contents-wrapper">
+        <div class="contents-item">
+          <div class="heading">
+            <h2>ログ</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">時刻</th>
+                <th scope="col">内容</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div class="contents-item">
+          <div class="heading">
+            <h2>時刻合わせ</h2>
+          </div>
+          <p>WiFiに接続し時刻を修正します。</p>
+          <form name="form" action="" onsubmit="return onSubmit()">
+            <div class="form-wrapper">
+              <input type="text" name="ssid" placeholder="ssid" required />
+              <input
+                type="text"
+                name="password"
+                placeholder="password"
+                required
+              />
+              <button class="btn send" type="submit" id="button">
+                接続する
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="contents-item">
+          <div class="heading">
+            <h2>テスト</h2>
+          </div>
+          <p>動作確認するためボタンです。</p>
+          <button
+            class="btn send"
+            type="submit"
+            id="button"
+            onclick="onPress()"
+          >
+            押す
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <h3>Yushin Ito</h3>
+        <p>2022/10/21</p>
+      </div>
+    </footer>
+  </body>
+</html>

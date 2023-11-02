@@ -25,8 +25,8 @@ LGFX lcd;
 M5Clock cl;
 M5Battery bat(190, 12, 3);
 
-const char *ssid = "ESP32-AP";
-const char *password = "password";
+const char* ssid = "ESP32-AP";
+const char* password = "password";
 const IPAddress ip(192, 168, 1, 1);
 const IPAddress subnet(255, 255, 255, 0);
 
@@ -35,9 +35,9 @@ uint8_t code = 0;
 bool isRecieved = false;
 bool isTimeout = false;
 
-void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client,
-             AwsEventType type, void *arg, uint8_t *data, size_t len);
-void broadcastJson(uint8_t code, String &timestamp, uint8_t _count = 1);
+void onEvent(AsyncWebSocket* server, AsyncWebSocketClient* client,
+    AwsEventType type, void* arg, uint8_t* data, size_t len);
+void broadcastJson(uint8_t code, String& timestamp, uint8_t _count = 1);
 
 void setup() {
     M5.begin();
@@ -62,25 +62,25 @@ void setup() {
     delay(100);
     WiFi.softAPConfig(ip, ip, subnet);
 
-    server.on("/api/log", HTTP_GET, [](AsyncWebServerRequest *request) {
+    server.on("/api/log", HTTP_GET, [](AsyncWebServerRequest* request) {
         String timestamp =
             preferences.getString("timestamp", "----/--/-- --:--");
         request->send(200, "text/plain", timestamp);
-    });
+        });
 
-    server.on("/api/wifi", HTTP_GET, [](AsyncWebServerRequest *request) {
+    server.on("/api/wifi", HTTP_GET, [](AsyncWebServerRequest* request) {
         String ssid = request->getParam("ssid")->value();
         String password = request->getParam("password")->value();
         cl.connectWiFi(ssid, password);
         request->send(200);
-    });
+        });
 
     server.serveStatic("/", SPIFFS, "/www/").setDefaultFile("index.html");
 
-    server.onNotFound([](AsyncWebServerRequest *server) {
+    server.onNotFound([](AsyncWebServerRequest* server) {
         server->method() == HTTP_OPTIONS ? server->send(200)
-                                         : server->send(404);
-    });
+            : server->send(404);
+        });
 
     ws.onEvent(onEvent);
     server.addHandler(&ws);
@@ -143,7 +143,8 @@ void loop() {
             M5.Beep.tone(3300, 300);
             if (code == 2) {
                 state = COUNT;
-            } else {
+            }
+            else {
                 String timestamp = cl.getTimeStamp();
                 broadcastJson(code, timestamp);
                 state = NORMAL;
@@ -181,8 +182,8 @@ void loop() {
     }
 }
 
-void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client,
-             AwsEventType type, void *arg, uint8_t *data, size_t len) {
+void onEvent(AsyncWebSocket* server, AsyncWebSocketClient* client,
+    AwsEventType type, void* arg, uint8_t* data, size_t len) {
     switch (type) {
     case WS_EVT_CONNECT:
         Serial.println("[CONNECT] WebSocket connected");
@@ -192,10 +193,10 @@ void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client,
         break;
     case WS_EVT_DATA: {
         Serial.println("[RECIEVE] WebSocket recieved from client");
-        AwsFrameInfo *info = (AwsFrameInfo *)arg;
+        AwsFrameInfo* info = (AwsFrameInfo*)arg;
         if (info->final && info->index == 0 && info->len == len) {
             data[len] = 0;
-            if (strcmp((char *)data, "request") == 0) {
+            if (strcmp((char*)data, "request") == 0) {
                 M5.Beep.tone(3300);
                 delay(500);
                 M5.Beep.mute();
@@ -207,7 +208,7 @@ void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client,
                 broadcastJson(3, timestamp);
                 preferences.putString("timestamp", timestamp);
             }
-            if (strcmp((char *)data, "timeout") == 0) {
+            if (strcmp((char*)data, "timeout") == 0) {
                 M5.Beep.tone(3300, 300);
                 code = 0;
                 count = 1;
@@ -225,7 +226,7 @@ void onEvent(AsyncWebSocket *server, AsyncWebSocketClient *client,
     }
 }
 
-void broadcastJson(uint8_t code, String &timestamp, uint8_t count) {
+void broadcastJson(uint8_t code, String& timestamp, uint8_t count) {
     StaticJsonDocument<256> doc;
     doc["code"] = code;
     doc["timestamp"] = timestamp;

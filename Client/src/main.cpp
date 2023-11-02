@@ -22,10 +22,10 @@ StaticJsonDocument<64> doc;
 M5TextScroll ts(0, lcd.height() / 2 + 50, 1);
 M5Battery bat(190, 12, 3);
 
-const char *ssid = "ESP32-AP";
-const char *password = "password";
+const char* ssid = "ESP32-AP";
+const char* password = "password";
 
-void onEvent(WStype_t type, uint8_t *payload, size_t length);
+void onEvent(WStype_t type, uint8_t* payload, size_t length);
 void onDisconnected(WiFiEvent_t event, WiFiEventInfo_t info);
 
 uint8_t code = 3;
@@ -41,7 +41,7 @@ void setup() {
     lcd.init();
     lcd.setRotation(1);
     M5.Axp.ScreenBreath(10);
-    WiFi.onEvent(onDisconnected, SYSTEM_EVENT_STA_DISCONNECTED);
+    WiFi.onEvent(onDisconnected, ARDUINO_EVENT_WIFI_STA_DISCONNECTED);
 
     WiFi.begin(ssid, password);
     Serial.print("WiFi connecting");
@@ -106,7 +106,7 @@ void loop() {
 
     client.loop();
 }
-void onEvent(WStype_t type, uint8_t *payload, size_t length) {
+void onEvent(WStype_t type, uint8_t* payload, size_t length) {
     switch (type) {
     case WStype_CONNECTED:
         Serial.println("[CONNECT] WebSocket connected");

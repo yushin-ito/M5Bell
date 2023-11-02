@@ -11,32 +11,34 @@
 
 <br>
 
-<h2>📝 M5Bellとは</h2>
-<P>M5BellはM5StickCPlusを利用した研究室用インターホンです。鈴鹿高専の機械工学科の研究室の多くは、研究室の前に多目的室という部屋があります。研究室を訪れた際に、多目的室のドアをノックして反応がないと不在だと判断して諦めてしまうという事例が多く発生していていました。そこでこのインターホンを制作することにしました。</p>
+<h2>📝 Overview</h2>
+<P>M5BellはM5StickCPlusを利用した研究室用インターホンです。鈴鹿高専の機械工学科の研究室の多くは、研究室の前に多目的室という部屋があります。研究室を訪れた際に、多目的室のドアをノックして反応がないと不在だと判断して諦めてしまうという事例が多く発生していていました。そこでこのインターホンを制作することにしました。本システムではM5StickC PLUSを2台使用します。</p>
 
 <br>
 
-<h2>👀 制作者</h2>
-<ul>
-  <li>Yushin Ito</li>
-</ul>
-
-<br>
-
-<h2>🔧 ビルド</h2>
+<h2>🔧 Usage</h2>
 <a href="https://open.vscode.dev/yushin-ito/M5Bell">
   <img src="https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc">
 </a>
+<br>
+<ol>
+  <li>リポジトリをクローンする</li>
+  <p><pre><code>git clone https://github.com/yushin-ito/M5Bell</code></pre></p>
+  <li>serverとclientをビルドする</li>
+  <p><pre><code>platformio run</code></pre></p>
+  <li>serverとclientを書き込む</li>
+  <p><pre><code>platformio run --target upload</code></pre></p>
+</ol>
 
 <br>
 
-<h2>🚀 機能</h2>
-<p>通信方式はWebSocketを採用しました。親機(研究室側)をServer、子機(多目的室側)をClientとしています。http://192.168.1.1 にアクセスすると管理画面を表示することができます。</p>
+<h2>🚀 Features</h2>
+<p>通信方式はWebSocketを採用しました。親機(研究室側)をServer、子機(多目的室側)をClientとしています。<code>http://192.168.1.1</code>にアクセスすると管理画面を表示することができます。</p>
 <br>
 <ul>
   <li>
     <h3>インターホン</h3>
-    <p>子機のボタンが押されるとWebSocketで"request"というテキストを送信します。テキストを受け取った親機は３つ選択肢から１つ選択してレスポンスを送信します。</p>
+    <p>子機のボタンが押されるとWebSocketで<code>"request"</code>というテキストを送信します。テキストを受け取った親機は３つ選択肢から１つ選択してレスポンスを送信します。</p>
   </li>
   <br>
   <div align="center">
@@ -75,5 +77,12 @@
 
 <br>
 
-<h2>📜 ライセンス</h2>
+<h2>👀 Author</h2>
+<ul>
+  <li>Yushin Ito</li>
+</ul>
+
+<br>
+
+<h2>📜 License</h2>
 <a href="https://github.com/yushin-ito/M5Bell/blob/main/LICENSE">MIT License<a>

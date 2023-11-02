@@ -32,32 +32,40 @@
 
 <h2>🚀 機能</h2>
 <p>通信方式はWebSocketを採用しました。親機(研究室側)をServer、子機(多目的室側)をClientとしています。http://192.168.1.1 にアクセスすると管理画面を表示することができます。</p>
-<h3>・ インターホン</h3>
-<p>子機のボタンが押されるとWebSocketで"request"というテキストを送信します。テキストを受け取った親機は以下の３つ選択肢から１つ選択してレスポンスを送信します。</p>
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/41f8a228-e465-42c2-b5a1-48dbbc69adfb">
-    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/09f81e20-2331-4669-a9d0-7c50d7a3196c" width="80%">
-  </picture>
-</div>
-<br>
-<h3>・ ログ</h3>
-<p>Webサイトからログを確認することができます。</p>
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/57719a8a-866d-445b-a9b4-acd6cbd068b5">
-    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/4f90a3ce-87a0-49b2-aa28-8bc7768cac16" width="80%">
-  </picture>
-</div>
-<br>
-<h3>・ 時刻合わせ</h3>
-<p>WebサイトからWiFiを利用して時刻合わせをすることができます。</p>
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/5483e85e-f298-4f51-beb4-5671c12911d2">
+<ul>
+  <li>
+    <h3>インターホン</h3>
+    <p>子機のボタンが押されるとWebSocketで"request"というテキストを送信します。テキストを受け取った親機は以下の３つ選択肢から１つ選択してレスポンスを送信します。</p>
+  </li>
+  <div align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/41f8a228-e465-42c2-b5a1-48dbbc69adfb">
+      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/09f81e20-2331-4669-a9d0-7c50d7a3196c" width="80%">
+    </picture>
+  </div>
+  <br>
+  <li>
+    <h3>ログ</h3>
+    <p>Webサイトからログを確認することができます/。</p>
+  </li>
+  <div align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/57719a8a-866d-445b-a9b4-acd6cbd068b5">
+      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/4f90a3ce-87a0-49b2-aa28-8bc7768cac16" width="80%">
+    </picture>
+  </div>
+  <br>
+  <li>
+    <h3>時刻合わせ</h3>
+    <p>WebサイトからWiFiを利用して時刻合わせをすることができます。</p>
+  </li>
+  <div align="center">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/5483e85e-f298-4f51-beb4-5671c12911d2">
     <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/0b5d730f-5b7e-45e6-8fca-73d9d7c5f392" width="80%">
-  </picture>
-</div>
+    </picture>
+  </div>
+</ul>
 
 <br>
 

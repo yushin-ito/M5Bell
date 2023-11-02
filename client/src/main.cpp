@@ -82,7 +82,7 @@ void loop() {
     case YES:
         ts.setText("入室してください");
         break;
-    case NO:
+    case NO: 
         ts.setText("現在対応できません");
         break;
     case WAIT: {
@@ -92,8 +92,11 @@ void loop() {
     } break;
     }
 
-    if (code < 3)
+    if (code < 3) {
+        M5.Beep.tone(3300, 500);
+        isRequest = false;
         code = 3;
+    }
 
     if (ts.getScrollCount() > 10) {
         ts.setText("ボタンを押してください");

@@ -32,11 +32,18 @@
 
 <h2>🚀 機能</h2>
 <p>通信方式はWebSocketを採用しました。親機(研究室側)をServer、子機(多目的室側)をClientとしています。http://192.168.1.1 にアクセスすると管理画面を表示することができます。</p>
+<br>
 <ul>
   <li>
     <h3>インターホン</h3>
-    <p>子機のボタンが押されるとWebSocketで"request"というテキストを送信します。テキストを受け取った親機は以下の３つ選択肢から１つ選択してレスポンスを送信します。</p>
+    <p>子機のボタンが押されるとWebSocketで"request"というテキストを送信します。テキストを受け取った親機は以下の３つ選択肢から１つ選択してレスポンスを送信します。</p> 
   </li>
+　<ul>
+　　<li>「入室できます」</li>
+　　<li>「入室できません」</li>
+    <li>「〇分後に対応可能」</li>
+　</ul> 
+  <br>
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/41f8a228-e465-42c2-b5a1-48dbbc69adfb">
@@ -44,10 +51,12 @@
     </picture>
   </div>
   <br>
+  <br>
   <li>
     <h3>ログ</h3>
-    <p>Webサイトからログを確認することができます/。</p>
+    <p>Webサイトからログを確認することができます。</p>
   </li>
+  <br>
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/57719a8a-866d-445b-a9b4-acd6cbd068b5">
@@ -55,10 +64,12 @@
     </picture>
   </div>
   <br>
+  <br>
   <li>
     <h3>時刻合わせ</h3>
     <p>WebサイトからWiFiを利用して時刻合わせをすることができます。</p>
   </li>
+  <br>
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/5483e85e-f298-4f51-beb4-5671c12911d2">

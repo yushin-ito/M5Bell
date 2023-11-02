@@ -12,7 +12,7 @@
 <br>
 
 <h2>📝 Overview</h2>
-<P>M5BellはM5StickCPlusを利用した研究室用インターホンです。鈴鹿高専の機械工学科の研究室の多くは、研究室の前に多目的室という部屋があります。研究室を訪れた際に、多目的室のドアをノックして反応がないと不在だと判断して諦めてしまうという事例が多く発生していていました。そこでこのインターホンを制作することにしました。本システムではM5StickC PLUSを2台使用します。</p>
+<P>M5BellはM5StickCPlusを利用した研究室用インターホンです。鈴鹿高専の機械工学科の研究室の多くは、研究室の前に多目的室という部屋があります。研究室を訪れた際に、多目的室のドアをノックして反応がないと不在だと判断して諦めてしまうという事例が多く発生していていました。そこでこのインターホンを制作することにしました。</p>
 
 <br>
 
@@ -44,8 +44,8 @@
   <br>
   <div align="center">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/41f8a228-e465-42c2-b5a1-48dbbc69adfb">
-      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/09f81e20-2331-4669-a9d0-7c50d7a3196c" width="90%">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/d188e9d2-6e67-4f2c-a854-a293e3203734">
+      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/a1c59262-c4ec-4b98-9133-2fd454ea6300" width="90%">
     </picture>
   </div>
   <br>
@@ -57,8 +57,8 @@
   <br>
   <div align="center">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/57719a8a-866d-445b-a9b4-acd6cbd068b5">
-      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/4f90a3ce-87a0-49b2-aa28-8bc7768cac16" width="90%">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/746ac0f3-d37e-4303-bd6f-08b5b92ecd93">
+      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/f5715bb1-237d-41ea-9d6e-4f9cf9de0b8a" width="90%">
     </picture>
   </div>
   <br>
@@ -70,8 +70,8 @@
   <br>
   <div align="center">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/5483e85e-f298-4f51-beb4-5671c12911d2">
-    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/0b5d730f-5b7e-45e6-8fca-73d9d7c5f392" width="90%">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/9caa0e31-b912-4641-b6e1-0519e09d3cc2">
+    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/a28720cc-a325-44c8-943e-7703d9ac882d" width="90%">
     </picture>
   </div>
 </ul>

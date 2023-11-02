@@ -44,7 +44,7 @@
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/41f8a228-e465-42c2-b5a1-48dbbc69adfb">
-      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/09f81e20-2331-4669-a9d0-7c50d7a3196c" width="80%">
+      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/09f81e20-2331-4669-a9d0-7c50d7a3196c" width="90%">
     </picture>
   </div>
   <br>
@@ -57,7 +57,7 @@
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/57719a8a-866d-445b-a9b4-acd6cbd068b5">
-      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/4f90a3ce-87a0-49b2-aa28-8bc7768cac16" width="80%">
+      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/4f90a3ce-87a0-49b2-aa28-8bc7768cac16" width="90%">
     </picture>
   </div>
   <br>
@@ -70,7 +70,7 @@
   <div align="center">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/5483e85e-f298-4f51-beb4-5671c12911d2">
-    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/0b5d730f-5b7e-45e6-8fca-73d9d7c5f392" width="80%">
+    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/0b5d730f-5b7e-45e6-8fca-73d9d7c5f392" width="90%">
     </picture>
   </div>
 </ul>

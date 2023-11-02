@@ -1,12 +1,13 @@
 <h1>M5Bell</h1>
 
-<img src="https://img.shields.io/badge/version-1.0.0-red.svg">
-<img src="https://img.shields.io/github/actions/workflow/status/yushin-ito/M5Bell/server.yml?label=build(server)">
-<img src="https://img.shields.io/github/actions/workflow/status/yushin-ito/M5Bell/client.yml?label=build(client)">
-<img src="https://img.shields.io/github/stars/yushin-ito/M5Bell?color=yellow">
-<img src="https://img.shields.io/github/commit-activity/t/yushin-ito/M5Bell">
-<img src="https://img.shields.io/badge/license-MIT-green">
-
+<div align="left">
+  <img src="https://img.shields.io/badge/version-1.0.0-red.svg">
+  <img src="https://img.shields.io/github/actions/workflow/status/yushin-ito/M5Bell/server.yml?label=build(server)">
+  <img src="https://img.shields.io/github/actions/workflow/status/yushin-ito/M5Bell/client.yml?label=build(client)">
+  <img src="https://img.shields.io/github/stars/yushin-ito/M5Bell?color=yellow">
+  <img src="https://img.shields.io/github/commit-activity/t/yushin-ito/M5Bell">
+  <img src="https://img.shields.io/badge/license-MIT-green">
+</div>
 
 <br>
 

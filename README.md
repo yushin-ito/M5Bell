@@ -42,12 +42,10 @@
     <p>子機のボタンが押されるとWebSocketで<code>"request"</code>というテキストを送信します。テキストを受け取った親機は３つ選択肢から１つ選択してレスポンスを送信します。</p>
   </li>
   <br>
-  <div align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/d188e9d2-6e67-4f2c-a854-a293e3203734">
-      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/a1c59262-c4ec-4b98-9133-2fd454ea6300" width="90%">
-    </picture>
-  </div>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/d188e9d2-6e67-4f2c-a854-a293e3203734">
+      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/a1c59262-c4ec-4b98-9133-2fd454ea6300">
+  </picture>
   <br>
   <br>
   <li>
@@ -55,12 +53,10 @@
     <p>Webサイトからログを確認することができます。</p>
   </li>
   <br>
-  <div align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/746ac0f3-d37e-4303-bd6f-08b5b92ecd93">
-      <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/f5715bb1-237d-41ea-9d6e-4f9cf9de0b8a" width="90%">
-    </picture>
-  </div>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/746ac0f3-d37e-4303-bd6f-08b5b92ecd93">
+    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/f5715bb1-237d-41ea-9d6e-4f9cf9de0b8a">
+  </picture>
   <br>
   <br>
   <li>
@@ -68,12 +64,10 @@
     <p>WebサイトからWiFiを利用して時刻合わせをすることができます。</p>
   </li>
   <br>
-  <div align="center">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/9caa0e31-b912-4641-b6e1-0519e09d3cc2">
-    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/a28720cc-a325-44c8-943e-7703d9ac882d" width="90%">
-    </picture>
-  </div>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yushin-ito/M5Bell/assets/75526539/9caa0e31-b912-4641-b6e1-0519e09d3cc2">
+    <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/a28720cc-a325-44c8-943e-7703d9ac882d">
+  </picture>
 </ul>
 
 <br>

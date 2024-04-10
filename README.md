@@ -70,11 +70,14 @@
   </picture>
 </ul>
 
+<img src="https://github.com/yushin-ito/M5Bell/assets/75526539/8f264307-a7af-4112-a6ae-04307f968b75">
+
 <br>
 
 <h2>👀 Author</h2>
 <ul>
   <li>Yushin Ito</li>
+  <li>Tatsuya Shirai</li>
 </ul>
 
 <br>

@@ -70,7 +70,12 @@
   </picture>
 </ul>
 
-<img src="https://github.com/yushin-ito/M5Bell/assets/75526539/8f264307-a7af-4112-a6ae-04307f968b75">
+<br>
+
+<p>MM5StickCPlusに対応した土台をSOLIDWORKSで作成しました。eDrawingを利用した3Dデータとビューワーは<a href="https://github.com/yushin-ito/M5Bell/blob/main/base.exe">こちら</a>です。</p>
+<div align="center">
+  <img src="https://github.com/yushin-ito/M5Bell/assets/75526539/8f264307-a7af-4112-a6ae-04307f968b75" width="70%">
+</div>
 
 <br>
 
@@ -83,4 +88,4 @@
 <br>
 
 <h2>📜 License</h2>
-<a href="https://github.com/yushin-ito/M5Bell/blob/main/LICENSE">MIT License<a>
+<a href="https://github.com/yushin-ito/M5Bell/blob/main/LICENSE">MIT License</a>
